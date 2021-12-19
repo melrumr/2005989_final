@@ -1,0 +1,29 @@
+body {
+    background: white url("images/background.png") no-repeat;
+    background-position: right 30px;
+}
+
+li a {
+    color: green;
+}
+
+.container1 h1 {
+    color: #004554;
+    padding: 10px 30px 30px 30px;
+}
+
+.container2 {
+    padding-left: 30px;
+}
+
+.container2 h3 {
+    color: #8748E1;
+}
+
+.btn1 a {
+    color: #5D5D5D;
+}
+
+.again a {
+    color: #6B8A24;
+}

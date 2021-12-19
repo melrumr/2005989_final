@@ -1,0 +1,87 @@
+.container0 {
+    background-color: #E4F7BA;
+    padding: 15px 15px 15px 15px;
+}
+
+.container0 h1 {
+    color: #324332;
+    text-align: center;
+}
+
+.write a {
+    color: #FD65B0;
+    text-align: right;
+}
+
+.write a:hover {
+    color: #CC3D3D;
+}
+
+.post {
+    padding: 20px 20px 20px 20px;
+    border-style: solid;
+    border-color: #E4F7BA;
+}
+
+.post2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: solid #EAEAEA;
+
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #486AAE;
+}
+
+.btn1 {
+    text-align: right;
+}
+
+.btn1 a {
+    color: #997000;
+}
+
+.btn1 a:hover {
+    color: #980000;
+}
+
+.btn2 a {
+    color: #99004C;
+}
+
+.btn2 a:hover {
+    color: #FFB2D9;
+}
+
+.postDetail h1 {
+    color: #008299;
+    padding-bottom: 15px;
+    border-bottom: solid #EAEAEA;
+}
+
+.postDetail p {
+    padding-top: 10px;
+}
+
+.date {
+    color: #A6A6A6;
+}
+
+.removeContainer h1 {
+    color: #FF3636;
+}
+
+.editContainer1 {
+    padding: 8px 25px;
+    background-color: #368D9C;
+}
+
+.editContainer1 h1 {
+    color: white;
+}
+
+.editContainer2 {
+    padding: 25px 15px;
+    border: 2px solid #368D9C;
+}

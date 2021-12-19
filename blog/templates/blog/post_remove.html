@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="removeContainer">
+    <h1>게시글이 정상적으로 삭제되었습니다.</h1>
+</div>
+<h2><a href="{% url 'blog:post_list' %}">Go to Blog</a></h2>
+
+{% endblock %}

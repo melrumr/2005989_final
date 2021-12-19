@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %} Polls {% endblock %}
+
+{% block content %}
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<div class="container1">
+    <h1>Choose Question</h1>
+</div>
+
+<div class="container2">
+    {% if latest_question_list %}
+        <ul>
+            {% for question in latest_question_list %}
+                <li><a href="{% url 'polls:detail' question.id %}">{{question.question_text}}</a></li><br>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+
+    <div class="allResults">
+        <a href="{% url 'polls:allResults' %}">모든 설문조사 결과 보러가기</a>
+    </div>
+</div>
+
+{% endblock %}

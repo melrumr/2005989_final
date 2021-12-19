@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} Results {% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<div class="container1">
+    <h1>{{question.question_text}}</h1>
+</div>
+
+<div class="container2">
+    <h3>< Vote Result ></h3>
+    <ul>
+        {% for choice in question.choice_set.all %}
+            <li>{{choice.choice_text}} -- {{choice.votes}} vote{{choice.votes|pluralize}}</li>
+        {% endfor %}
+    </ul><br>
+    <div class="again">
+        <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+    </div>
+    <br>
+    <div class="btn1">
+        <a href="{% url 'polls:index'%}"><span class="glyphicon glyphicon-list-alt"></span></a>
+    </div>
+</div>
+
+{% endblock %}

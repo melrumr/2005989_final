@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="editContainer1">
+    <h1>New post</h1>
+</div>
+
+<div class="editContainer2">
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <br><button type="submit" class="save btn btn-default">Save</button>
+        <a class="btn btn-default" href="{% url 'blog:post_list'%}"><span class="glyphicon glyphicon-list"></span></a>
+    </form>
+</div>
+{% endblock %}
